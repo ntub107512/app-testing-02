@@ -6,8 +6,12 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  redirect(){
+    this.navCtrl.push('CardPage');
+  }
 
   constructor(public navCtrl: NavController) {
-	
+
   }
+
 }
